@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+<div id="team" class="text-center">
+    <div class="overlay">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2 section-title">
+          <a href="{% url 'store:team' %}"><h2>Meet the Team</h2></a>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+        </div>
+        <div id="row">
+            <div class="col-md-3 col-sm-6 team">
+                <div class="thumbnail"> <img src="{% static 'img/team/01.jpg' %}" alt="..." class="team-img">
+                <div class="caption">
+                    <a href="{% url 'store:team' %}"><h3>John Doe</h3></a>
+                    <p>Director</p>
+                </div>
+                </div>
+            </div>
+          <div class="col-md-3 col-sm-6 team">
+            <div class="thumbnail"> <img src="{% static 'img/team/02.jpg' %}" alt="..." class="img-circle team-img">
+              <div class="caption">
+                <a href="{% url 'store:team' %}"><h3>Mike Doe</h3></a>
+                <p>Senior Designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 team">
+            <div class="thumbnail"> <img src="{% static 'img/team/03.jpg' %}" alt="..." class="img-circle team-img">
+              <div class="caption">
+                <a href="{% url 'store:team' %}"><h3>Jane Doe</h3></a>
+                <p>Senior Designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 team">
+            <div class="thumbnail"> <img src="{% static 'img/team/04.jpg' %}" alt="..." class="img-circle team-img">
+              <div class="caption">
+                <a href="{% url 'store:team' %}"><h3>Karen Doe</h3></a>
+                <p>Project Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <button type="submit" class="btn-lg btn-sprimary"><a href="{% url 'store:index' %}">Home</a></button>
+</div>
+
+{% endblock body %}

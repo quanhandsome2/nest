@@ -1,0 +1,237 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block  body %}
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>Our Story</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-6 text-center"> <img src="{% static 'img/about.jpg' %}" class="img-responsive" alt=""> </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="about-text">
+          <h3>The Studio</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+          <h3>How We Work</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Services Section -->
+<div id="services">
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1 section-title text-center">
+      <a href="{% url 'store:services' %}"><h2>Our Services</h2></a>
+      <hr>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 service"> <img src="{% static 'img/residential-design.jpg' %}" class="img-responsive" alt="Project Title">
+        <a href="{% url 'store:services' %}"><h3>Residential Design</h3></a>
+        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend.</p>
+      </div>
+      <div class="col-xs-12 col-sm-4 service"> <img src="{% static 'img/office-design.jpg' %}" class="img-responsive" alt="Project Title">
+        <a href="{% url 'store:services' %}"><h3>Office Design</h3></a>
+        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend.</p>
+      </div>
+      <div class="col-xs-12 col-sm-4 service"> <img src="{% static 'img/commercial-design.jpg' %}" class="img-responsive" alt="Project Title">
+        <a href="{% url 'store:services' %}"><h3>Commercial Design</h3></a>
+        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio Section -->
+<div id="portfolio">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>Projects</h2>
+      <hr>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+    </div>
+    <div class="categories">
+      <ul class="cat">
+        <li>
+          <ol class="type">
+            <li><a href="#" data-filter="*" class="active">All Projects</a></li>
+            <li><a href="#" data-filter=".residential">Residential</a></li>
+            <li><a href="#" data-filter=".office">Office</a></li>
+            <li><a href="#" data-filter=".commercial">Commercial</a></li>
+          </ol>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div class="row">
+      <div class="portfolio-items">
+        <div class="col-sm-6 col-md-4 col-lg-4 residential">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/01-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Name</h4>
+              </div>
+              <img src="{% static 'img/portfolio/01-small.jpg' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 commercial">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/02-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Name</h4>
+              </div>
+              <img src="{% static 'img/portfolio/02-small.jpg' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 residential">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/03-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Name</h4>
+              </div>
+              <img src="{% static 'img/portfolio/03-small.jpg' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 residential">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/04-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Name</h4>
+              </div>
+              <img src="{% static 'img/portfolio/04-small.jpg' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 commercial">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/05-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Name</h4>
+              </div>
+              <img src="{% static 'img/portfolio/05-small.jpg' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 office">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/06-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Name</h4>
+              </div>
+              <img src="{% static 'img/portfolio/06-small.jpg' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 office">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/07-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Name</h4>
+              </div>
+              <img src="{% static 'img/portfolio/07-small.jpg' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 residential">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/08-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Name</h4>
+              </div>
+              <img src="{% static 'img/portfolio/08-small.jpg' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 commercial">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/09-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Name</h4>
+              </div>
+              <img src="{% static 'img/portfolio/09-small.jpg' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 office">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/10-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Name</h4>
+              </div>
+              <img src="{% static 'img/portfolio/10-small.jpg' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 office">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/11-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Name</h4>
+              </div>
+              <img src="{% static 'img/portfolio/11-small.jpg' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 residential">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="{% static 'img/portfolio/12-large.jpg' %}" title="Project Title" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>Project Name</h4>
+              </div>
+              <img src="{% static 'img/portfolio/12-small.jpg' %}" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Team Section -->
+<div id="team" class="text-center">
+  <div class="overlay">
+    <div class="container">
+      <div class="col-md-8 col-md-offset-2 section-title">
+        <a href="{% url 'store:team' %}"><h2>Meet the Team</h2></a>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+      </div>
+      <div id="row">
+        <div class="col-md-3 col-sm-6 team">
+          <div class="thumbnail"> <img src="{% static 'img/team/01.jpg' %}" alt="..." class="team-img">
+            <div class="caption">
+              <a href="{% url 'store:team' %}"><h3>John Doe</h3></a>
+              <p>Director</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 team">
+          <div class="thumbnail"> <img src="{% static 'img/team/02.jpg' %}" alt="..." class="img-circle team-img">
+            <div class="caption">
+              <a href="{% url 'store:team' %}"><h3>Mike Doe</h3></a>
+              <p>Senior Designer</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 team">
+          <div class="thumbnail"> <img src="{% static 'img/team/03.jpg' %}" alt="..." class="img-circle team-img">
+            <div class="caption">
+              <a href="{% url 'store:team' %}"><h3>Jane Doe</h3></a>
+              <p>Senior Designer</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 team">
+          <div class="thumbnail"> <img src="{% static 'img/team/04.jpg' %}" alt="..." class="img-circle team-img">
+            <div class="caption">
+              <a href="{% url 'store:team' %}"><h3>Karen Doe</h3></a>
+              <p>Project Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Messenger Plugin chat Code -->
+<div id="fb-root"></div>
+
+<!-- Your Plugin chat code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+{% endblock body %}
+
